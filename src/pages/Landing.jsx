@@ -14,8 +14,8 @@ const Landing = () => {
   function searchResult() {
     const searchQueryTrimmed = searchQuery.trim()
     if (searchQueryTrimmed !== '') {
-      const encodedQuery = encodeURI(searchQueryTrimmed);
-      window.location.href=`/search?q=${encodedQuery}/`
+      const encodedQuery = encodeURIComponent(searchQueryTrimmed);
+      window.location.href=`/search/${encodedQuery}/`
     }
   }
 
