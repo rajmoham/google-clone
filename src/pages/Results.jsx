@@ -26,8 +26,12 @@ const Results = () => {
     }
   }
 
-  useEffect(() => {
+  useEffect(() => {  
     getData()
+  }, [])
+
+  useEffect(() => {
+    document.title = `${searchQuery} - Google Search`
   }, [])
 
   return (

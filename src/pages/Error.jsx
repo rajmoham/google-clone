@@ -1,6 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const Error = () => {
+
+    useEffect(() => {
+        document.title = "Invalid URL"
+    }, [])
+
     return (
         <div className='w-screen h-screen flex justify-center items-center'>
             <div className='flex flex-col text-center'>
