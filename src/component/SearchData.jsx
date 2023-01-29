@@ -9,8 +9,7 @@ const SearchData = ( {data} ) => {
                     {data.title}
                 </span>
             </a>
-            <p className='text-sm text-gray-700'>
-                {data.snippet}
+            <p dangerouslySetInnerHTML={ {__html: data.htmlSnippet} } className='text-sm text-gray-700'>     
             </p>
         </div>
     )

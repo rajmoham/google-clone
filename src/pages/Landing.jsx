@@ -30,24 +30,24 @@ const Landing = () => {
       <div className='flex justify-between items-center px-6 py-4'>
         <ul className='flex'>
           <li>
-            <a className='text-black text-sm hover:underline dark:text-gray-600' href='/'>About</a>
+            <a className=' cursor-not-allowed text-black text-sm hover:underline dark:text-gray-600'>About</a>
           </li>
           <li className='ml-4'>
-            <a className='text-black text-sm hover:underline dark:text-gray-600' href='/'>Store</a>
+            <a className=' cursor-not-allowed text-black text-sm hover:underline dark:text-gray-600'>Store</a>
           </li>
         </ul>
         <ul className='flex items-center'>
           <li className='mr-4'>
-            <a className='text-black text-sm hover:underline' href='/'>Gmail</a>
+            <a className=' cursor-not-allowed text-black text-sm hover:underline'>Gmail</a>
           </li>
           <li className='mr-4'>
-            <a className='text-black text-sm hover:underline' href='/'>Images</a>
+            <a className=' cursor-not-allowed text-black text-sm hover:underline'>Images</a>
           </li>
           <li>
-            <a className='rounded-full hover:bg-gray-200 p-3 flex' href='/'><img className='w-4' src={grid} alt="" /></a>
+            <a className=' cursor-not-allowed rounded-full hover:bg-gray-200 p-3 flex'><img className='w-4' src={grid} alt="" /></a>
           </li>
           <li className='ml-3'>
-            <button className='text-sm text-white bg-blue-500 py-1.5 px-5 rounded'>Sign in</button>
+            <button className='cursor-not-allowed text-sm text-white bg-blue-500 py-1.5 px-5 rounded'>Sign in</button>
           </li>
         </ul>
       </div>
@@ -64,7 +64,7 @@ const Landing = () => {
         </div>
         <div className='mt-5'>
           <button onClick={searchResult} className='text-sm py-2 px-4 bg-gray-50 rounded border border-white hover:border-gray-200 mr-2'>Google Search</button>
-          <button className='text-sm py-2 px-4 bg-gray-50 rounded border border-white hover:border-gray-200 ml-2'>I'm Feeling Lucky</button>
+          <button className='cursor-not-allowed text-sm py-2 px-4 bg-gray-50 rounded border border-white hover:border-gray-200 ml-2'>I'm Feeling Lucky</button>
         </div>
       </div>
 
@@ -77,24 +77,24 @@ const Landing = () => {
           <div className='m-auto flex sm:flex-row sm:justify-around lg:justify-between w-screen flex-col'>
             <ul className='flex mx-8 justify-center mb-2'>
               <li className='mx-3'>
-                <a className='text-sm text-gray-500 hover:underline' href="">Advertising</a>
+                <a className='text-sm text-gray-500 hover:underline cursor-not-allowed' >Advertising</a>
               </li>
               <li className='mx-3'>
-                <a className='text-sm text-gray-500 hover:underline' href="">Business</a>
+                <a className='text-sm text-gray-500 hover:underline cursor-not-allowed' >Business</a>
               </li>
               <li className='mx-3'>
-                <a className='text-sm text-gray-500 hover:underline ' href="">How Seach Works</a>
+                <a className='text-sm text-gray-500 hover:underline cursor-not-allowed' >How Seach Works</a>
               </li>
             </ul>
             <ul className='flex mx-8 justify-center mb-2'>
               <li className='mx-3'>
-                <a className='text-sm text-gray-500 hover:underline' href="">Privacy</a>
+                <a className='text-sm text-gray-500 hover:underline cursor-not-allowed' >Privacy</a>
               </li>
               <li className='mx-3'>
-                <a className='text-sm text-gray-500 hover:underline' href="">Terms</a>
+                <a className='text-sm text-gray-500 hover:underline cursor-not-allowed' >Terms</a>
               </li>
               <li className='mx-3'>
-                <a className='text-sm text-gray-500 hover:underline' href="">Settings</a>
+                <a className='text-sm text-gray-500 hover:underline cursor-not-allowed' >Settings</a>
               </li>
             </ul>
           </div>
