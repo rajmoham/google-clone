@@ -21,7 +21,6 @@ const Results = () => {
     try {
       const { data } = await axios.get(url)
       setSearchResults(data)
-      console.log(data)
     } catch (error) {
     }
   }
@@ -103,8 +102,8 @@ const Results = () => {
             <span className='text-gray-400 text-sm'>{`About ${searchResults.searchInformation.formattedTotalResults} results (${searchResults.searchInformation.formattedSearchTime} seconds)`}</span>
             <div>
               {
-                searchResults.items.map((item) => (
-                  <SearchData data={item} />
+                searchResults.items.map((item, index) => (
+                  <SearchData key={index} data={item} />
                 ))
               }
             </div>
