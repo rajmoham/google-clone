@@ -2547,9 +2547,13 @@ const Results = () => {
 
   const { query } = useParams()
   const searchQuery = decodeURIComponent(query)
-  const cx = "728cda582580e48ff"
-  //const api_key = "AIzaSyBhsWbuB1DNYrYeU9T0TNLlB4q8dhalA2g"
-  const api_key = "AIzaSyAK-nhTzmWoiZEQVbiptBO2UNpIMMMyAmU"
+
+  const api_key = process.env.REACT_APP_API_KEY
+  const cx = process.env.REACT_APP_CX   
+
+  console.log(api_key)
+  console.log(cx)
+ 
   const url = `https://customsearch.googleapis.com/customsearch/v1?q=${(query)}&cx=${cx}&key=${api_key}`
 
   async function getData() {
