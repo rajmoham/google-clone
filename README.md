@@ -28,7 +28,9 @@ REACT_APP_CX={ paste the Search Engine ID here }
 - Uses environmental variables to maintain security on private data
 
 #### Bugs
-- Cannot type another search query on the results page
+*n/a*
 
 #### Improvements
 - Page navigations to show further results
+- Able to sign up in order to store recent searches
+- Image searching
