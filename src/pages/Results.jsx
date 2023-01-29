@@ -26,6 +26,20 @@ const Results = () => {
     }
   }
 
+  function checkEnterPressed(event) {
+    if (event.key === 'Enter') {
+      searchResult()
+    }
+  }
+
+  function searchResult() {
+    const searchQueryTrimmed = document.getElementById("SearchBar").value.trim()
+    if (searchQueryTrimmed !== '') {
+      const encodedQuery = encodeURIComponent(searchQueryTrimmed);
+      window.location.href=`/search/${encodedQuery}/`
+    }
+  }
+
   useEffect(() => {  
     getData()
   }, [])
@@ -43,7 +57,9 @@ const Results = () => {
             <input
               className='border border-gray-300 py-2 pr-4 pl-10 rounded-full w-full hover:shadow-lg'
               type="text"
-              value={searchQuery} />
+              id='SearchBar'
+              defaultValue={searchQuery} 
+              onKeyDown={checkEnterPressed}/>
             <FontAwesomeIcon className='text-gray-600 absolute left-4 top-3.5' icon="fa-solid fa-magnifying-glass" />
           </div>
           <ul className='flex'>
